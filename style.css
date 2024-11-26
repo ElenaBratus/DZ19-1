@@ -593,6 +593,7 @@ input[type="text"]::placeholder {
 .slick-prev {
   width: 100px;
   height: 100px;
+  z-index: 1;
 }
 .slick-prev:before {
   font-size: 100px;
@@ -605,19 +606,23 @@ input[type="text"]::placeholder {
   opacity: 1;
 }
 
-/*.slick-dots li {
-  border: 1px solid white;
-}*/
+.slick-dots li {
+  font-size: 10px;
+}
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before {
-  color: white;
   opacity: 1;
+  background-color: white;
 }
 .slick-dots li button:before {
-  color: rgba(60, 124, 189, 1);
+  background-image: url(images/Kvadratowhite.svg);
   opacity: 1;
+  content: "";
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: 20px;
 }
 .slick-dots li.slick-active button:before {
-  color: white;
   opacity: 1;
+  background-color: white;
 }
